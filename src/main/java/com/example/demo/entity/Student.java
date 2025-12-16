@@ -6,4 +6,21 @@ public class Student{
     private String email;
     private float cgpa;
 
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id=id;
+    }
+    public String getName{
+        return Name;
+    }
+    public void setName(string name){
+        this.name=name;
+    }
+    public String getEmail{
+        return email;
+    }
+    public 
+
 }
