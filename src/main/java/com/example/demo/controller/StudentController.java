@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.List;
+import java.util.*;
 
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
@@ -23,5 +23,9 @@ import com.example.demo.service.StudentService;
     @GetMapping("/fetchrecord")
     public List<Student> fetchRecord(){
         return ser.fetchRecord();
+    }
+    @GetMapping("/fetchdata/{id}")
+    public optional<Student> fetchDataById(@PathVariaple int id){
+        return ser.fetchDataById(id);
     }
  }
