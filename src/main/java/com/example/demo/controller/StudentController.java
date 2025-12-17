@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +25,7 @@ import com.example.demo.service.StudentService;
         return ser.fetchRecord();
     }
     @GetMapping("/fetchdata/{id}")
-    public Optional<Student> fetchDataById(@Path Variable int id){
+    public Optional<Student> fetchDataById(@PathVariable int id){
         return ser.fetchDataById(id);
     }
  }
