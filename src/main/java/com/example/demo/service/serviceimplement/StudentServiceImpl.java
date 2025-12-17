@@ -31,7 +31,7 @@ public class StudentServiceImpl implements StudentService {
         return repo.findAll();
     }
     @Override
-    public Optional<Student> fetchDataById(int id){
-        return repo.findAllById(id);
+    public Optional<Student> fetchdataById(int id){
+        return repo.findById(id);
     }
 }
