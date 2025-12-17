@@ -1,6 +1,6 @@
 package com.example.demo.service.serviceimplement;
 
-import java.util.;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,5 +31,7 @@ public class StudentServiceImpl implements StudentService {
         return repo.findAll();
     }
     @Override
-    public optionl
+    public Optional<Student> fetchDataById(int id){
+        return repo.findAllById(id);
+    }
 }
