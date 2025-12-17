@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 public class Student{
 
     @Id
+    @GeneratedVaule(Strategy=Generation)
     private int id;
     private String name;
     private String email;
