@@ -1,6 +1,6 @@
 package com.example.demo.controller;
  import java.util.*;
- import ord.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.beans.factory.annotation.Autowired;
  import org.springframework.web.binfd.annotation.*;
  import com.example.demo.service.StudentService;
  
