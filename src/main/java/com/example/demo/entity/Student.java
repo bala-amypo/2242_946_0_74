@@ -1,13 +1,14 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Student{
 
     @Id
-    @GeneratedVaule(Strategy=Generation)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private int id;
     private String name;
     private String email;
@@ -20,7 +21,7 @@ public class Student{
         this.id=id;
     }
     public String getName(){
-        return Name;
+        return name;
     }
     public void setName(String name){
         this.name=name;
