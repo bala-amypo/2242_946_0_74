@@ -22,7 +22,7 @@ import com.example.demo.service.StudentService;
         return ser.fetchRecord();
     }
     @GetMapping("/fetchdatabyid/{id}")
-    public Optional<Student> fetchdataById(@PathVariable int id){
-        return ser.fetchdataById(id);
+    public Optional<Student> fetchDataById(@PathVariable int id){
+        return ser.fetchDataById(id);
     }
  }
