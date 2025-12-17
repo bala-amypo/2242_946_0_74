@@ -13,5 +13,7 @@ package com.example.demo.controller;
         return ser.createData(stu);
     }
     @GetMapping("/fetchrecord")
-    public
+    public List<Student> fetchRecord(){
+        return ser.fetchRecord();
+    }
  }
