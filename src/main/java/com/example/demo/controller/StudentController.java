@@ -1,5 +1,8 @@
 package com.example.demo.controller;
  import java.util.*;
+ import ord.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.web.binfd.annotation.*;
+ import com.example.demo.service.StudentService;
  
  @RestController
  public class StudentController{
@@ -9,4 +12,6 @@ package com.example.demo.controller;
     public Student createData(@RequestBody Student stu){
         return ser.createData(stu);
     }
+    @GetMapping("/fetchrecord")
+    public
  }
