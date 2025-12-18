@@ -83,19 +83,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.surefire</groupId>
-						<artifactId>surefire-testng</artifactId>
-						<version>3.2.5</version>
-					</dependency>
-					<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
-                 <dependency>
-                 <groupId>com.mysql</groupId>
-                 <artifactId>mysql-connector-j</artifactId>
-                 <version>9.4.0</version>
-                 </dependency>
-				</dependencies>
+				
 			</plugin>
 		</plugins>
 	</build>
